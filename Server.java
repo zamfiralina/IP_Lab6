@@ -2,15 +2,13 @@ import java.util.Vector;
 
 public class Server {
 
-  public Integer newAttr;
 
-    public Vector  myUser;
-    public Vector  myDBInterface;
+    public void login(String emailAdress, String  stringPassword) {
+    }
 
-  public void login( EmailAdress,  StringPassword) {
-  }
+    public void register(String emailAdress,String password) {
+    }
 
-  public void register( EmailAdress,  Password) {
-  }
+
 
 }

@@ -1,13 +1,38 @@
-import java.util.Vector;
-
 public class Email {
 
-  public String Subject;
+    public String Subject = new String();
 
-  public String Text;
+    public String Text = new String();
 
-  public User SendTo;
+    public User SendTo = new User();
 
-    public Vector  myEmailManager;
+    public Email(String subject, String text, User sendTo) {
+        Subject = subject;
+        Text = text;
+        SendTo = sendTo;
+    }
 
+    public String getSubject() {
+        return Subject;
+    }
+
+    public void setSubject(String subject) {
+        Subject = subject;
+    }
+
+    public String getText() {
+        return Text;
+    }
+
+    public void setText(String text) {
+        Text = text;
+    }
+
+    public User getSendTo() {
+        return SendTo;
+    }
+
+    public void setSendTo(User sendTo) {
+        SendTo = sendTo;
+    }
 }
