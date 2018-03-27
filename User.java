@@ -10,10 +10,13 @@ public class User {
     public EmailManager Emails = new EmailManager();
 
 
-    public void createNewEmail(String subject,String text,User sentTo) {
+    public Email createNewEmail(String subject,String text,User sentTo) {
+        return new Email(subject, text, sentTo);
+
     }
 
     public void sentEmail(Email email) {
+        
     }
 
     public User() {
