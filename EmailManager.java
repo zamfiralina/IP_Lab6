@@ -43,4 +43,8 @@ public class EmailManager {
     public void setDrafts(Vector<Email> drafts) {
         Drafts = drafts;
     }
+
+    public void addDrafts(Email email) {
+        Drafts.add(email);
+    }
 }

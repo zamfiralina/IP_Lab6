@@ -6,10 +6,16 @@ public class Email {
 
     public User SendTo = new User();
 
+    public User Sender = new User();
+
     public Email(String subject, String text, User sendTo) {
         Subject = subject;
         Text = text;
         SendTo = sendTo;
+    }
+
+    public void saveAsDraft() {
+        Sender.getEmailManager().addDrafts(this);
     }
 
     public String getSubject() {

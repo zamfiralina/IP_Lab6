@@ -7,7 +7,7 @@ public class User {
 
     public String Password = new String();
 
-    public EmailManager Emails = new EmailManager();
+    public EmailManager EmailManager = new EmailManager();
 
 
     public Email createNewEmail(String subject,String text,User sentTo) {
@@ -16,7 +16,7 @@ public class User {
     }
 
     public void sentEmail(Email email) {
-        
+
     }
 
     public User() {
@@ -27,7 +27,7 @@ public class User {
     public User(String emailAdress, String password, EmailManager emails) {
         EmailAdress = emailAdress;
         Password = password;
-        Emails = emails;
+        EmailManager = emails;
     }
 
     public String getEmailAdress() {
@@ -46,11 +46,11 @@ public class User {
         Password = password;
     }
 
-    public EmailManager getEmails() {
-        return Emails;
+    public EmailManager getEmailManager() {
+        return EmailManager;
     }
 
-    public void setEmails(EmailManager emails) {
-        Emails = emails;
+    public void setEmailManager(EmailManager emails) {
+        EmailManager = emails;
     }
 }
